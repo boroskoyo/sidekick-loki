@@ -1,0 +1,4 @@
+.env
+/sidekick-client-node
+/node_modules
+package-lock.json
