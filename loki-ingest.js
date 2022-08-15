@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { createLogger, transports } = require("winston");
 const LokiTransport = require("winston-loki");
-const { sidekickConnect } = require('./sidekick-client-node')
+const { onTrigger } = require('sidekick-client')
 
 const options = {
   transports: [
@@ -30,4 +30,4 @@ const sidekickClient = {
     stdout : false, // enable console log
 }
 
-sidekickConnect(sidekickClient);
+onTrigger(sidekickClient);
