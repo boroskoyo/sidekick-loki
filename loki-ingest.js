@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { createLogger, transports } = require("winston");
 const LokiTransport = require("winston-loki");
-const { onTrigger } = require('sidekick-client')
+const { onTrigger } = require('@runsidekick/sidekick-client')
 
 const options = {
   transports: [
